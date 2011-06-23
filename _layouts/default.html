@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Progstr Docs - {{ page.title }}</title>
+    <link href="stylesheets/default.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/syntax.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="header" class="basic" style="margin-bottom:20px">
+        <div class="site">
+          <div class="logo">
+            <a href="/"><img src="http://wp.progstr.com/wp-content/themes/Accent/cache/1308832570_logo.png" alt="progstr docs" /></a>
+          </div>
+          <div class="toplinks">
+            <ul class="nav" style="margin-top:20px">
+              <li><a href="http://progstr.com/">progstr.com</a></li>
+              <li><a href="http://demos.progstr.com/">Demos</a></li>
+              <li><a href="http://support.progstr.com/">Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="content" class="site">
+        <div class="wikistyle">
+          {{ content }}
+        </div>
+      </div>
+
+      <div class="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="site">
+        <div class="info">
+          <div class="company">
+           &copy;
+            {{ site.time | date: "%Y" }}
+            Progstr.com
+            All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

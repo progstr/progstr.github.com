@@ -125,6 +125,10 @@ a:hover {
     text-decoration:underline;
 }
 
+ul, ol {
+    margin-left: 2em;
+}
+
 .wikistyle h1 {
     font-size:170%;
     border-top:4px solid #aaa !important;

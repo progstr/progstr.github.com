@@ -24,7 +24,7 @@ Start off by [downloading](https://github.com/progstr/progstr-dotnet/downloads) 
 
 And here is how you integrate it in your project:
 
-[Sign up](https://app.progstr.com/signup) for the progstr.log service and obtain an API token. That token is used to identify you against the service. Keep it secret and do not share it with anyone unless you want to let them log messages on your behalf.
+[Sign up](https://app.progstr.com/signup) for the progstr.log service and get your API token from the account *Settings* page. That token is used to identify you against the service. Keep it secret and do not share it with anyone unless you want to let them log messages on your behalf.
 Download the binary distribution or compile progstr-dotnet from source. Copy *Progstr.Log.dll* to your project and add a reference.
 Configure the API token by adding a "progstr.log.apitoken" entry to the `appSettings` section in your application config file (or the root web.config file for your web application):
 

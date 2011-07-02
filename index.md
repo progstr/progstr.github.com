@@ -37,7 +37,7 @@ Configure the API token by adding a "progstr.log.apitoken" entry to the `appSett
 Alternatively, you can configure the library in code only. Just set the `LogSettings.ApiToken` property before you start logging, best done when your application starts.
 
 {% highlight csharp %}
-LogSettings.ApiToken = "6f413b64-a8e1-4e25-b9e6-d83acf26ccba"; />
+LogSettings.ApiToken = "6f413b64-a8e1-4e25-b9e6-d83acf26ccba";
 {% endhighlight %}
 
 Getting Started

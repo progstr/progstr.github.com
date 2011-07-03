@@ -16,7 +16,9 @@ Progstr.log is a service that collects and manages programmer log entries in the
 
 Installation
 -------------------------
-Start off by [downloading](https://github.com/progstr/progstr-dotnet/downloads) the latest version of the client library. It is free and open-source. The source code [is available](https://github.com/progstr/progstr-dotnet) on GitHub.
+The easiest way to get the *Progstr.Log* library into your project is to use the [NuGet package](http://nuget.org/List/Packages/Progstr.Log) from within Visual Studio. It will download the library to your project folder and automatically add a reference.
+
+You can also manually [download](https://github.com/progstr/progstr-dotnet/downloads) the latest version of the client library. The library itself is free and open-source and its source code [is available](https://github.com/progstr/progstr-dotnet) on GitHub.
 
 *Progstr.Log.dll* is a regular .NET assembly that you need to drop in your project folder and refer from your application. 
 
@@ -26,7 +28,8 @@ And here is how you integrate it in your project:
 
 [Sign up](https://app.progstr.com/signup) for the progstr.log service and get your API token from the account *Settings* page. That token is used to identify you against the service. Keep it secret and do not share it with anyone unless you want to let them log messages on your behalf.
 Download the binary distribution or compile progstr-dotnet from source. Copy *Progstr.Log.dll* to your project and add a reference.
-Configure the API token by adding a "progstr.log.apitoken" entry to the `appSettings` section in your application config file (or the root web.config file for your web application):
+
+Now that you have the library added to your project, you need to configure the API token by adding a "progstr.log.apitoken" entry to the `appSettings` section in your application config file (or the root web.config file for your web application):
 
 {% highlight xml %}
 <appSettings>
@@ -34,11 +37,13 @@ Configure the API token by adding a "progstr.log.apitoken" entry to the `appSett
 </appSettings>
 {% endhighlight %}
 
-Alternatively, you can configure the library in code only. Just set the `LogSettings.ApiToken` property before you start logging, best done when your application starts.
+Alternatively, if you don't want to tinker with configuration files, you can configure the library in code. Just set the `LogSettings.ApiToken` property before you start logging, best done when your application starts.
 
 {% highlight csharp %}
 LogSettings.ApiToken = "6f413b64-a8e1-4e25-b9e6-d83acf26ccba";
 {% endhighlight %}
+
+Note that if you mix code-based configuration with config file settings, the code-based `LogSettings` properties take precedence over the ones in your application config file.
 
 Getting Started
 -------------------------

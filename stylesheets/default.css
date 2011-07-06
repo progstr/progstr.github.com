@@ -332,3 +332,37 @@ ul, ol {
     font-weight: normal;
     text-transform: lowercase;
 }
+
+//white text above top menu
+#toptextbox {
+	width: 820px; 
+    height: 34px; 
+    margin: auto; 
+    color: white; 
+    font-size: 11px;
+}
+
+#toptexboxleft {
+	width: 380px; 
+    float: left; 
+    margin-top: 13px;
+}
+
+#toptexboxright {
+	width: 380px; 
+    float: right; 
+    text-align: right; 
+    margin-top: 13px;
+}
+
+#toptexboxright a {
+	margin-left:30px;
+}
+
+#toptexboxright a:hover {
+	text-decoration:underline;
+}
+
+#toptextboxright b {
+	color:white;
+}

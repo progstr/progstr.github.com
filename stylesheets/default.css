@@ -358,10 +358,7 @@ ul, ol {
 
 #toptextboxright a {
 	margin-left:30px;
-}
-
-#toptextboxright a:hover {
-	text-decoration:underline;
+    color:white;
 }
 
 #toptextboxright b {

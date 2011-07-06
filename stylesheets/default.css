@@ -342,24 +342,24 @@ ul, ol {
     font-size: 11px;
 }
 
-#toptexboxleft {
+#toptextboxleft {
 	width: 380px; 
     float: left; 
     margin-top: 13px;
 }
 
-#toptexboxright {
+#toptextboxright {
 	width: 380px; 
     float: right; 
     text-align: right; 
     margin-top: 13px;
 }
 
-#toptexboxright a {
+#toptextboxright a {
 	margin-left:30px;
 }
 
-#toptexboxright a:hover {
+#toptextboxright a:hover {
 	text-decoration:underline;
 }
 

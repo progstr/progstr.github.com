@@ -1,369 +1,86 @@
-#footer {
-    font-size:12px;
-    border-top:2px solid #ddd;
-    background:#f1f1f1;
-    margin:25px 0 0;
-    padding:20px 0 15px;
-}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-#footer p.company {
-    font-weight:700;
-    margin:0;
-}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Progstr Docs - {{ page.title }}</title>
+    <link href="stylesheets/default.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/syntax.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.ico" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24267977-1']);
+      _gaq.push(['_setDomainName', '.docs.progstr.com']);
+      _gaq.push(['_trackPageview']);
 
-.site {
-    width: 60em;
-    margin:0 auto;
-    padding:0 15px;
-}
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
 
-#content.site {
-  width: 59em;
-  background: white;
-  padding: 30px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-}
+     </script>
+  </head>
+  <body>
 
-* {
-    margin:0;
-    padding:0;
-}
-body * {
-    line-height:1.4em;
-}
+	<div class="ohoboho">
+		<div id="toptextboxleft">
+			<b>Free BETA - currently supporting Microsoft .NET and Mono</b>
+		</div>
+			
+		<div id="toptexboxright">
+			<b>.NET APPLICATION LOGGING TO THE CLOUD</b>
+			<a href="http://app.progstr.com/login"><b>[ Log in ]</b></a>			
+		</div>
+	</div>
+    <div id="top_bg" style='margin-top:0px;'>
+      <div id="top_bar">
+        <div id="menu_wrapper">
 
-html {
-    overflow-y:scroll;
-}
+          <div class="logo">
+            <a id="custom_logo" href="http://progstr.com"><img src="/images/progstr-logo.png" alt="" /></a>
+          </div>
 
-html,body {
-    height:100%;
-    color:#000;
-}
+          <div class="menu-header-menu-container">
+            <ul id="main_menu" class="nav">
+              <li id="menu-item-324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-324">
+              <a title="ask anything!" target="_blank" href="http://support.progstr.com/discussion/new" class="">Contact us<span>ask anything!</span></a>
+              </li>
+              <li id="menu-item-313" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-313">
+              <a title="Try it in your browser." href="http://demos.progstr.com" class="">Try Now!<span>No installation required</span></a>
+              </li>
+              <li id="menu-item-273" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-273">
+              <a title="Live log management app." href="http://app.progstr.com/demoAutoLogin" class="">View Logs<span>Live logs for the demo account.</span></a>
+              </li>
+              <li id="menu-item-308" class="signup menu-item menu-item-type-custom menu-item-object-custom menu-item-308">
+              <a title="for a free account." href="https://app.progstr.com/signup" class=""><b style="color:firebrick;">Sign up</b><span>for a free account</span></a>
+              </li>
+            </ul>
+          </div>                 
+        </div>
+      </div>
+    </div>
 
-body {
-    background-color: #5badd0;
-    font:13.34px helvetica,arial,freesans,clean,sans-serif;
-    font-size:small;
-}
+    <div id="main">
+      <div id="content" class="site">
+        <div class="wikistyle">
+          {{ content }}
+        </div>
+      </div>
+    </div>
 
-pre,code {
-    font:12px 'Bitstream Vera Sans Mono','Courier',monospace;
-}
-
-a {
-    color:#4183c4;
-    text-decoration:none;
-}
-
-a:hover {
-    text-decoration:underline;
-}
-
-ul, ol {
-    margin-left: 2em;
-}
-
-.wikistyle h1 {
-    font-size:170%;
-    border-top:4px solid #aaa !important;
-    padding-top:.5em !important;
-    margin-top:1.5em;
-}
-
-.wikistyle h1:first-child {
-    margin-top:0;
-    padding-top:.25em !important;
-    border-top:none !important;
-}
-
-.wikistyle h2 {
-    font-size:150%;
-    margin-top:1.5em;
-    border-top:4px solid #e0e0e0 !important;
-    padding-top:.5em !important;
-}
-
-.wikistyle hr {
-    border:1px solid #ddd;
-}
-
-.wikistyle p {
-    line-height:1.5em;
-    margin:1em 0;
-}
-
-.wikistyle ul ul,.wikistyle ul ol,.wikistyle ol ol,.wikistyle ol ul,#wiki-form .content-body ul ul,#wiki-form .content-body ul ol,#wiki-form .content-body ol ol,#wiki-form .content-body ol ul {
-    margin-top:0;
-    margin-bottom:0;
-}
-
-.wikistyle blockquote {
-    border-left:5px solid #ddd !important;
-    padding-left:.6em !important;
-    color:#555 !important;
-    margin:1em 0;
-}
-
-.wikistyle dt {
-    font-weight:700 !important;
-    margin-left:1em;
-}
-
-.wikistyle dd {
-    margin-left:2em;
-    margin-bottom:1em;
-}
-
-.wikistyle table th {
-    border-bottom:1px solid #bbb !important;
-    padding:.2em 1em;
-}
-
-.wikistyle table td {
-    border-bottom:1px solid #ddd !important;
-    padding:.2em 1em;
-}
-
-.wikistyle a code,.wikistyle a:link code,.wikistyle a:visited code {
-    color:#4183c4 !important;
-}
-
-.wikistyle pre.console {
-    font-size:12px;
-    background-color:black !important;
-    line-height:1.5em;
-    color:white !important;
-    margin:1em 0;
-    padding:.5em !important;
-}
-
-.wikistyle pre.console code {
-    font-size:12px;
-    background-color:black !important;
-    border:none !important;
-    color:white !important;
-    padding:0;
-}
-
-.wikistyle pre.console span {
-    color:#888 !important;
-}
-
-.wikistyle pre.console span.command {
-    color:yellow !important;
-}
-
-.wikistyle .frame {
-    display:inline-block;
-    margin:0;
-}
-
-.wikistyle .frame>span {
-    display:block;
-    border:1px solid #aaa;
-    padding:4px;
-}
-
-.wikistyle .frame span span {
-    display:block;
-    font-size:10pt;
-    text-align:center;
-    line-height:10pt;
-    font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
-    margin:0;
-    padding:4px 0 2px;
-}
-
-.wikistyle .float-left {
-    float:left;
-    padding:.5em 1em .25em 0;
-}
-
-.wikistyle .float-right {
-    float:right;
-    padding:.5em 0 .25em 1em;
-}
-
-.wikistyle .align-left {
-    display:block;
-    text-align:left;
-}
-
-.wikistyle .align-right {
-    display:block;
-    text-align:right;
-}
-
-.wikistyle pre {
-    font-size:12px;
-    background-color:#eee;
-    border:1px solid #ddd;
-    line-height:1.5em;
-    color:#444;
-    overflow:auto;
-    -webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    border-radius:3px;
-    margin:1em 0;
-    padding:5px;
-}
-
-.wikistyle pre::-webkit-scrollbar {
-    height:8px;
-    width:8px;
-}
-
-.wikistyle pre::-webkit-scrollbar-track-piece {
-    margin-bottom:10px;
-    background-color:#e5e5e5;
-    border-bottom-left-radius:4px 4px;
-    border-bottom-right-radius:4px 4px;
-    border-top-left-radius:4px 4px;
-    border-top-right-radius:4px 4px;
-}
-
-.wikistyle pre::-webkit-scrollbar-thumb:vertical {
-    height:25px;
-    background-color:#ccc;
-    -webkit-border-radius:4px;
-    -webkit-box-shadow:0 1px 1px rgba(255,255,255,1);
-}
-
-.wikistyle pre::-webkit-scrollbar-thumb:horizontal {
-    width:25px;
-    background-color:#ccc;
-    -webkit-border-radius:4px;
-}
-
-.wikistyle pre code {
-    font-size:12px;
-    background-color:#eee !important;
-    border:none !important;
-    padding:0;
-}
-
-.wikistyle code {
-    font-size:12px;
-    background-color:#f8f8ff !important;
-    color:#444 !important;
-    border:1px solid #dedede !important;
-    padding:0 .2em !important;
-}
-
-/* Header styles matching the home page */
-#top_bg {
-    width: 100%;
-    margin: 34px 0px;
-    height: 118px;
-    background: transparent url('../images/menu_bg.png') repeat-x center center;
-}
-
-#top_bar {
-    width: 65em;
-    margin-left: auto;
-    margin-right: auto;
-    height: 70px;
-    margin: auto;
-}
-
-.logo {
-    float: left;
-    margin: 29px 25px 8px 0;
-}
-
-.logo img {
-    border: 0px;
-}
-
-#menu_wrapper {
-    padding: 0;
-    height: 66px;
-}
-
-#menu_wrapper .nav ul, #menu_wrapper div .nav {
-    list-style: none;
-    display: block;
-    padding: 0 5px 0 0;
-    margin: 0 -7px 0 0;
-    float: right;
-    font-size: 13px;
-    margin-top: 7px;
-    font-weight: bold;
-}
-
-#menu_wrapper .nav ul li, #menu_wrapper div .nav li {
-    display: block;
-    float: left;
-    margin: 0 0 0 0;
-}
-
-#menu_wrapper .nav ul li a, #menu_wrapper div .nav li a {
-    color: #555;
-    text-decoration: none;
-    line-height: 16px;
-    font-family: Arial, Verdana, sans-serif;
-    font-size: 13px;
-    font-st-topyle: normal;
-    font-variant: normal;
-    font-weight: bold;
-}
-
-#menu_wrapper .nav ul li a, #menu_wrapper div .nav li a {
-    display: block;
-    padding: 32px 20px 8px 20px;
-    height: 61px;
-    margin: 0;
-}
-
-#menu_wrapper .nav ul li a.hover, #menu_wrapper .nav ul li a:hover, #menu_wrapper div .nav li a.hover, #menu_wrapper div .nav li a:hover {
-    background: transparent url('../images/menu_hover.png') repeat-x top center;
-    color: #444;
-}
-
-#menu_wrapper .nav ul li a span, #menu_wrapper div .nav li a span {
-    display: block;
-    font-size: 11px;
-    color: #96A1A6;
-    font-weight: normal;
-    text-transform: lowercase;
-}
-
-//white text above top menu
-
-.ohoboho {
-	width: 820px; 
-    height: 34px; 
-    margin: auto; 
-    color: white; 
-    font-size: 11px;
-}
-
-#toptextboxleft {
-	width: 380px; 
-    float: left; 
-    margin-top: 13px;
-}
-
-#toptextboxright {
-	width: 380px; 
-    float: right; 
-    text-align: right; 
-    margin-top: 13px;
-}
-
-#toptextboxright a {
-	margin-left:30px;
-}
-
-#toptextboxright a:hover {
-	text-decoration:underline;
-}
-
-#toptextboxright b {
-	color:white;
-}
+    <div id="footer">
+      <div class="site">
+        <div class="info">
+          <div class="company">
+           &copy;
+            {{ site.time | date: "%Y" }}
+            Progstr.com
+            All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

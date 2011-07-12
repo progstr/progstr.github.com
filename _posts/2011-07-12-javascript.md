@@ -9,7 +9,6 @@ Table of Contents
 * [Installation](#installation)
 * [Configuration](#configuration)
 * [Getting Started](#getting_started)
-* [Troubleshooting](#troubleshooting)
 * [Supported Platforms](#supported_platforms)
 
 Introduction

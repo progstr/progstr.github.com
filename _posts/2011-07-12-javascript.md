@@ -1,7 +1,7 @@
 ---
 title: JavaScript
 layout: default
-permalink: javascript
+permalink: javascript.html
 ---
 Table of Contents
 =================

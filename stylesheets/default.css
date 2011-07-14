@@ -272,7 +272,8 @@ ul, ol {
 }
 
 .logo {
-    float: left;
+    position: absolute;
+    left: 0px;
     margin: 29px 25px 8px 0;
 }
 
@@ -283,6 +284,7 @@ ul, ol {
 #menu_wrapper {
     padding: 0;
     height: 66px;
+    position: relative;
 }
 
 #menu_wrapper .nav ul, #menu_wrapper div .nav {

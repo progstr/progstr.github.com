@@ -4,8 +4,8 @@ layout: default
 ---
 Table of Contents
 =================
-* [Adding progstr &raquo; logger to your app](#adding)
-* [Using the `progstr-ruby` gem in Rails](#using_the__gem_in_rails)
+* [Adding progstr &raquo; logger to your app](#adding_progstr__logger_to_your_app)
+* [Using the progstr-ruby gem in Rails](#using_the_progstrruby_gem_in_rails)
 * [Using the Logger API](#using_the_logger_api)
 * [Viewing logs and setting up alerts](#viewing_logs_and_setting_up_alerts)
 
@@ -21,7 +21,7 @@ This will provision a Progstr account and set the heroku evironment variable PRO
 
 Of course, you can also install the add-on from the Heroku web site.
 
-# Using the `progstr-ruby` gem in Rails
+# Using the progstr-ruby gem in Rails
 
 To use the logging API, you need the `progstr-ruby` gem added to your application. Add it to your bundler configuration by adding this line to your Gemfile:
 

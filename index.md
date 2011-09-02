@@ -15,9 +15,14 @@ Table of Contents
 
 # Local Setup
 
+
 To use the logging API, you need the `progstr-ruby` gem added to your application. Add it to your bundler configuration by adding this line to your Gemfile:
 
-    gem "progstr-ruby"
+    group :production, :staging do
+      gem "progstr-ruby", :require => 'progstr'
+    end
+
+Of course, don't add a second production or staging group if you already have those in place. In addition, if you wish to only log events in production, register the gem for the production group only.
 
 In addition, you might wish to install the `progstr-ruby` gem on your development system. Tell bundler to do so by running:
 

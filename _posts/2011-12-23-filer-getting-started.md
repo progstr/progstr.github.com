@@ -10,6 +10,7 @@ Table of Contents
 * [Associating uploaders with your models](#associating_uploaders_with_your_models)
 * [Feeding data to your uploaders](#feeding_data_to_your_uploaders)
 * [Generating URLs for files](#generating_urls_for_files)
+* [Validation] (#validation)
 * [Source code](#source_code)
 
 
@@ -84,6 +85,32 @@ Just use the `url` method on your attachments, say `@user.avatar.url`. Here is a
       <%= image_tag @user.avatar.url, :style => "max-width: 600px; margin: 10px 0px;" %>
     </p>
 
+### Validation
+
+Users may upload all types of files to your application and it might be a good idea to restrict that to the set of files that your application knows how to process. For example it would not be a good idea to allow non-image file types as an avatar picture. It might be a good idea to disable executable content that might spread malware too. To help with that the `progstr-filer` gem currently supports attachment validation according to an extension whitelist through the `validates_file_extension_of` method that is available to model objects:
+
+    class User < ActiveRecord::Base
+      has_file :avatar, AvatarUploader
+      validates_file_extension_of :avatar, :allowed => ["jpg", "png"]
+    end
+
+In addition you can restrict the file size using `validates_file_size_of`:
+
+    class User < ActiveRecord::Base
+      has_file :avatar, AvatarUploader
+      validates_file_size_of :avatar, :less_than => 1 * 1024 * 1024
+    end
+
+The example above will not allow files larger than 1 MB. You can specify a lower bound using the `:greater_than` option or even pass a numeric range using the `:in` option.
+
+Of course, requiring users to always upload a file when saving a model object, use the Rails built-in `validates_presence_of` validator:
+
+    class User < ActiveRecord::Base
+      has_file :avatar, AvatarUploader
+      validates_presence_of :avatar
+    end
+
+You can pass a custom error message for all validators using the `:message` option.
 
 ### Deleting stale files
 

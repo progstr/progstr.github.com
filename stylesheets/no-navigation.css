@@ -29,8 +29,12 @@ pre,code {
 }
 
 a {
-    color: #aaa;
+    color: #fff;
     text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
 }
 
 h3 {
@@ -40,10 +44,6 @@ h3 {
 
 h1 {
     margin-bottom: 0.5em;
-}
-
-a:hover {
-    text-decoration:underline;
 }
 
 ul, ol {

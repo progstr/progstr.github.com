@@ -34,11 +34,11 @@ h1, h2 {
     font-weight: normal;
 }
 
-wsite-content * {
+#wsite-content * {
     line-height:1.4em;
 }
 
-wsite-content ul, wsite-content ol {
+#wsite-content ul, #wsite-content ol {
     list-style: square;
     margin-left: 2em;
     margin-bottom: 1em;

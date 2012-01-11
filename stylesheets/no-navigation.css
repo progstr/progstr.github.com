@@ -47,5 +47,7 @@ h1 {
 }
 
 ul, ol {
+    list-style: square;
+    margin-left: 2em;
     margin-bottom: 1em;
 }

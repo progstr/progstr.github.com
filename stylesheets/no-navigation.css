@@ -25,6 +25,7 @@ body {
 }
 
 pre,code {
+    text-shadow: none;
     font:12px 'Bitstream Vera Sans Mono','Courier',monospace;
 }
 

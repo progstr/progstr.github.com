@@ -22,6 +22,7 @@ Bundler makes that all too easy - add this line to your `Gemfile` to have the ge
 
 
     gem "progstr-filer", :require => "progstr-filer"
+{.prettyprint .lang-ruby .language-ruby}
 
 
 ### Credentials
@@ -29,6 +30,7 @@ Bundler makes that all too easy - add this line to your `Gemfile` to have the ge
 Progstr Filer uses two keys similar to Amazon's cloud services. The access key is a public string that gets rendered publicly in URL's and web pages. We use it to identify your account. The secret key is used to sign and encrypt sensitive data. You should keep it, well, secret.
 
 Provisioning your add-on with Heroku gets you two environment variables: `PROGSTR_FILER_ACCESS_KEY` and `PROGSTR_FILER_SECRET_KEY`. Add those to your `config/environments/production.rb` file:
+
 
     Progstr::Filer.access_key = ENV['PROGSTR_FILER_ACCESS_KEY']
     Progstr::Filer.secret_key = ENV['PROGSTR_FILER_SECRET_KEY']

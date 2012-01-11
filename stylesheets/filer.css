@@ -1,26 +1,6 @@
-* {
-    margin:0;
-    padding:0;
-}
-body * {
-    line-height:1.4em;
-}
-
-html {
-    overflow-y:scroll;
-}
-
-html,body {
-    height:100%;
-    color:#000;
-}
-
 body {
     font-family:Helvetica, Arial, 'Lucida Grande',Verdana,sans-serif;
     text-shadow: 1px 1px 2px #000;
-
-    color: #aaa !important;
-    background-color: transparent !important;
 }
 
 body p {
@@ -54,7 +34,11 @@ h1, h2 {
     font-weight: normal;
 }
 
-ul, ol {
+wsite-content * {
+    line-height:1.4em;
+}
+
+wsite-content ul, wsite-content ol {
     list-style: square;
     margin-left: 2em;
     margin-bottom: 1em;

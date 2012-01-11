@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: no-navigation
+layout: filer
 permalink: filer-getting-started.html
 ---
 ## Table of Contents
@@ -16,7 +16,7 @@ permalink: filer-getting-started.html
 
 Progstr Filer is a developer-friendly attachments hosting platform built specifically for web apps. It lets you easily associate file attachments with your ActiveRecord models and removes the hassle of actually hosting the files yourself.
 
-### Setting up the Ruby gem
+### Setting up the Ruby gem {: name="kur"} 
 
 Bundler makes that all too easy - add this line to your `Gemfile` to have the gem pulled into your app and required automatically.
 
@@ -32,7 +32,7 @@ Provisioning your add-on with Heroku gets you two environment variables: `PROGST
 
     Progstr::Filer.access_key = ENV['PROGSTR_FILER_ACCESS_KEY']
     Progstr::Filer.secret_key = ENV['PROGSTR_FILER_SECRET_KEY']
- 
+
 
 ### Defining an uploader
 

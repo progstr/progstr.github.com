@@ -23,6 +23,10 @@ body {
     background-color: transparent !important;
 }
 
+body p {
+    text-align: justify;
+}
+
 pre,code {
     text-shadow: none;
     font: 'Bitstream Vera Sans Mono','Courier',monospace;

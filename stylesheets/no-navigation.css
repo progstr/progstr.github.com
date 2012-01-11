@@ -29,6 +29,7 @@ body p {
 
 pre,code {
     text-shadow: none;
+    margin: 1em auto;
     font: 'Bitstream Vera Sans Mono','Courier',monospace;
 }
 

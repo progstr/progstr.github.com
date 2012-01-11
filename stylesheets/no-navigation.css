@@ -16,9 +16,6 @@ html,body {
 }
 
 body {
-    font:13.34px helvetica,arial,freesans,clean,sans-serif;
-    font-size:small;
-
     text-shadow: 1px 1px 2px #000;
     color: #aaa !important;
     background-color: transparent !important;
@@ -26,7 +23,7 @@ body {
 
 pre,code {
     text-shadow: none;
-    font:12px 'Bitstream Vera Sans Mono','Courier',monospace;
+    font: 'Bitstream Vera Sans Mono','Courier',monospace;
 }
 
 a {
@@ -40,116 +37,4 @@ a:hover {
 
 ul, ol {
     margin-left: 2em;
-}
-
-/* Header styles matching the home page */
-#top_bg {
-    width: 100%;
-    margin: 0px 0px 34px 0px;
-    height: 118px;
-    background: transparent url('../images/menu_bg.png') repeat-x center center;
-}
-
-#top_bar {
-    width: 65em;
-    margin-left: auto;
-    margin-right: auto;
-    height: 70px;
-    margin: auto;
-}
-
-.logo {
-    position: absolute;
-    left: 0px;
-    margin: 29px 25px 8px 0;
-}
-
-.logo img {
-    border: 0px;
-}
-
-#menu_wrapper {
-    padding: 0;
-    height: 66px;
-    position: relative;
-}
-
-#menu_wrapper .nav ul, #menu_wrapper div .nav {
-    list-style: none;
-    display: block;
-    padding: 0 5px 0 0;
-    margin: 0 -7px 0 0;
-    float: right;
-    font-size: 13px;
-    margin-top: 7px;
-    font-weight: bold;
-}
-
-#menu_wrapper .nav ul li, #menu_wrapper div .nav li {
-    display: block;
-    float: left;
-    margin: 0 0 0 0;
-}
-
-#menu_wrapper .nav ul li a, #menu_wrapper div .nav li a {
-    color: #555;
-    text-decoration: none;
-    line-height: 16px;
-    font-family: Arial, Verdana, sans-serif;
-    font-size: 13px;
-    font-st-topyle: normal;
-    font-variant: normal;
-    font-weight: bold;
-}
-
-#menu_wrapper .nav ul li a, #menu_wrapper div .nav li a {
-    display: block;
-    padding: 32px 20px 8px 20px;
-    height: 61px;
-    margin: 0;
-}
-
-#menu_wrapper .nav ul li a.hover, #menu_wrapper .nav ul li a:hover, #menu_wrapper div .nav li a.hover, #menu_wrapper div .nav li a:hover {
-    background: transparent url('../images/menu_hover.png') repeat-x top center;
-    color: #444;
-}
-
-#menu_wrapper .nav ul li a span, #menu_wrapper div .nav li a span {
-    display: block;
-    font-size: 11px;
-    color: #96A1A6;
-    font-weight: normal;
-    text-transform: lowercase;
-}
-
-/*white text above top menu*/
-
-#toptextbox {
-	width: 820px; 
-    height: 34px; 
-    margin: auto; 
-    color: white; 
-    font-size: 11px;
-}
-
-#toptextboxleft {
-	width: 380px; 
-    float: left; 
-    margin-top: 13px;
-}
-
-#toptextboxright {
-	width: 380px; 
-    float: right; 
-    text-align: right; 
-    margin-top: 13px;
-}
-
-#toptextboxright a {
-	margin-left:30px;
-    color:white;
-}
-
-#toptextboxright b {
-	color:white;
 }

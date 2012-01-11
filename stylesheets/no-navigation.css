@@ -40,11 +40,13 @@ a:hover {
 h3 {
     margin-top: 1em;
     margin-bottom: 0.5em;
+    font-weight: normal;
 }
 
 h1, h2 {
     color: white;
     margin-bottom: 0.5em;
+    font-weight: normal;
 }
 
 ul, ol {

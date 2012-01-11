@@ -3,8 +3,8 @@ title: Home
 layout: no-navigation
 permalink: filer-getting-started.html
 ---
-Table of Contents
-=================
+## Table of Contents
+
 * [Credentials](#credentials)
 * [Defining an uploader](#defining_an_uploader)
 * [Associating uploaders with your models](#associating_uploaders_with_your_models)

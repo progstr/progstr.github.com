@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: default
+layout: no-navigation
 permalink: filer-getting-started.html
 ---
 Table of Contents

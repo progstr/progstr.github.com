@@ -16,7 +16,9 @@ html,body {
 }
 
 body {
+    font-family:Helvetica, Arial, 'Lucida Grande',Verdana,sans-serif;
     text-shadow: 1px 1px 2px #000;
+
     color: #aaa !important;
     background-color: transparent !important;
 }
@@ -33,6 +35,10 @@ a {
 
 h3 {
     margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
     margin-bottom: 0.5em;
 }
 

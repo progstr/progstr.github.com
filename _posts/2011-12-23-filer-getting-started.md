@@ -59,6 +59,22 @@ Progstr Filer extends ActiveRecord models and lets you use the `has_file` method
 
 Note: make sure your database table has an `avatar` column created already. Future versions of the `progstr-filer` gem will let you generate migrations automatically.
 
+### Public and private files
+
+Each file as an associated URL that you can use to refer to it in your web application. Typically you will get a list of the files you need to display and generate image references that point to them. By default files are private and are accessible only through a special URL that has an authentication token parameter. That URL is temporary and will expire after a certain amount of time (the default is 30 minutes). This makes it easy for you to implement privате areas with separate files that are visible only to certain users. You control the access settings by deciding which URLs will be visible to each user.
+
+You can also mark files as public. Public files can be accessed without the authentication token part in the URL and are visible to everyone.
+
+Controlling permissions requires no coding on your part and is done in the Progstr Filer control panel. Instead of marking individual files as public or private you define rules that match files according to their uploader names. This way you can easily mark avatar images as public and private gallery files as, well, private. Here is a sample rule that allows public access to files uploaded by `AvatarUploader`:
+
+![Public avatars rule](http://i.imgur.com/LVm8t.png)
+
+Again, by default, all files are private unless there is an explicit rule that makes them public.
+
+You can control private file URL expiration through the `Progstr::Filer.session_timeout` setting. Timeouts are specified in seconds. Here is how you can set the timeout to one hour:
+
+    Progstr::Filer.session_timeout = 60 * 60 # 1 hour
+
 ### Feeding data to your uploaders
 
 That is easy - all you need is assign a Ruby File object to the uploader property and save the model object:
@@ -93,6 +109,8 @@ Just use the `url` method on your attachments, say `@user.avatar.url`. Here is a
       <%= image_tag @user.avatar.url, :style => "max-width: 600px; margin: 10px 0px;" %>
     </p>
 {.prettyprint .lang-html .language-html}
+
+The `url` method always generates private URLs. To generate a public url, use the `public_url` method.
 
 ### Validation
 

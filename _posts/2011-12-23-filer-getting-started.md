@@ -61,7 +61,7 @@ Note: make sure your database table has an `avatar` column created already. Futu
 
 ### Public and private files
 
-Each file as an associated URL that you can use to refer to it in your web application. Typically you will get a list of the files you need to display and generate image references that point to them. By default files are private and are accessible only through a special URL that has an authentication token parameter. That URL is temporary and will expire after a certain amount of time (the default is 30 minutes). This makes it easy for you to implement privате areas with separate files that are visible only to certain users. You control the access settings by deciding which URLs will be visible to each user.
+Each file as an associated URL that you can use to refer to it in your web application. Typically you will get a list of the files you need to display and generate image references that point to them. By default files are private and are accessible only through a special URL that has an authentication token parameter. That URL is temporary and will expire after a certain amount of time (the default is 30 minutes). This makes it easy for you to implement private areas with separate files that are visible only to certain users. You control the access settings by deciding which URLs will be visible to each user.
 
 You can also mark files as public. Public files can be accessed without the authentication token part in the URL and are visible to everyone.
 

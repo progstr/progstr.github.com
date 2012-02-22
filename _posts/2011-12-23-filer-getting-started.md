@@ -16,7 +16,7 @@ permalink: filer-getting-started.html
 
 Progstr Filer is a developer-friendly file hosting platform built specifically for web apps. It lets you easily associate file attachments with your ActiveRecord models and removes the hassle of actually hosting the files yourself.
 
-### Setting up the Ruby gem {: name="kur"} 
+### Setting up the Ruby gem
 
 Bundler makes that all too easy - add this line to your `Gemfile` to have the gem pulled into your app and required automatically.
 
@@ -84,7 +84,7 @@ That is easy - all you need is assign a Ruby File object to the uploader propert
 {.prettyprint .lang-ruby .language-ruby}
 
 
-Rails can get most of the job done for you automatically if you create a file upload form:
+Or, Rails can get most of the job done for you automatically. If you create a file upload form:
 
     <div class="field">
       <%= f.label :avatar %>
@@ -93,11 +93,13 @@ Rails can get most of the job done for you automatically if you create a file up
 {.prettyprint .lang-html .language-html}
 
 
-...and create your model from the params hash:
+... and then create your model from the params hash:
 
     @user = User.new(params[:user])
     @user.save
 {.prettyprint .lang-ruby .language-ruby}
+
+That will automatically extract the attachment file object from the params hash and set it as the avatar.
 
 
 ### Generating URLs for files

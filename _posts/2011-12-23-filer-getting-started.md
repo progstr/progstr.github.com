@@ -57,7 +57,7 @@ Progstr Filer extends ActiveRecord models and lets you use the `has_file` method
 {.prettyprint .lang-ruby .language-ruby}
 
 
-Note: make sure your database table has an `avatar` column created already. Future versions of the `progstr-filer` gem will let you generate migrations automatically.
+Note: make sure your database table has an `avatar` string column created already. Future versions of the `progstr-filer` gem will let you generate migrations automatically.
 
 ### Public and private files
 

@@ -5,9 +5,11 @@ permalink: filer-getting-started.html
 ---
 ## Table of Contents
 
+* [Setting up the Ruby gem](#setting_up_the_ruby_gem)
 * [Credentials](#credentials)
 * [Defining an uploader](#defining_an_uploader)
 * [Associating uploaders with your models](#associating_uploaders_with_your_models)
+* [Public and private files](#public_and_private_files)
 * [Feeding data to your uploaders](#feeding_data_to_your_uploaders)
 * [Generating URLs for files](#generating_urls_for_files)
 * [Validation] (#validation)
@@ -29,12 +31,15 @@ Bundler makes that all too easy - add this line to your `Gemfile` to have the ge
 
 Progstr Filer uses two keys similar to Amazon's cloud services. The access key is a public string that gets rendered publicly in URL's and web pages. We use it to identify your account. The secret key is used to sign and encrypt sensitive data. You should keep it, well, secret.
 
-Provisioning your add-on with Heroku gets you two environment variables: `PROGSTR_FILER_ACCESS_KEY` and `PROGSTR_FILER_SECRET_KEY`. Add those to your `config/environments/production.rb` file:
+Provisioning your add-on with Heroku gets you two environment variables: `PROGSTR_FILER_ACCESS_KEY` and `PROGSTR_FILER_SECRET_KEY`. The Ruby gem is smart enough to pick them up automatically, so you don't have to do anything about them. Yet, if you want to override them, you could modify your `config/environments/production.rb` file as follows:
 
 
-    Progstr::Filer.access_key = ENV['PROGSTR_FILER_ACCESS_KEY']
-    Progstr::Filer.secret_key = ENV['PROGSTR_FILER_SECRET_KEY']
+    # Note, sample/invalid keys below - substitute for your real keys
+    Progstr::Filer.access_key = "31322b06758444309c62452f35105318"
+    Progstr::Filer.secret_key = "01f0db3bd2f640cebfcbd0134360d4c4"
 {.prettyprint .lang-ruby .language-ruby}
+
+Note: Non-Heroku deployments must have the keys set in the respective environment config file.
 
 
 ### Defining an uploader
@@ -57,7 +62,7 @@ Progstr Filer extends ActiveRecord models and lets you use the `has_file` method
 {.prettyprint .lang-ruby .language-ruby}
 
 
-Note: make sure your database table has an `avatar` string column created already. Future versions of the `progstr-filer` gem will let you generate migrations automatically.
+Note: make sure your database table has an `avatar` *string* column created already. Future versions of the `progstr-filer` gem will let you generate migrations automatically.
 
 ### Public and private files
 
@@ -67,7 +72,7 @@ You can also mark files as public. Public files can be accessed without the auth
 
 Controlling permissions requires no coding on your part and is done in the Progstr Filer control panel. Instead of marking individual files as public or private you define rules that match files according to their uploader names. This way you can easily mark avatar images as public and private gallery files as, well, private. Here is a sample rule that allows public access to files uploaded by `AvatarUploader`:
 
-![Public avatars rule](http://i.imgur.com/LVm8t.png)
+![Public avatars rule](images/heroku/public-avatars-rule.jpg)
 
 Again, by default, all files are private unless there is an explicit rule that makes them public.
 

@@ -68,4 +68,4 @@ Feedback
 --------
 * The library source code is hosted on [GitHub](https://github.com/progstr/progstr-js).
 * If you have a feature suggestion, enhancement idea, or a bug report for the client library, please open a ticket on the project [issue tracker](https://github.com/progstr/progstr-js/issues).
-* For general problems or inquiries regarding integrating the library in your project or the *progstr.log* service, please contact [support](http://support.progstr.com).
+* For general problems or inquiries regarding integrating the library in your project or the *progstr.log* service, please contact [support](mailto:support@progstr.com).

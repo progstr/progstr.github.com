@@ -103,8 +103,8 @@ The upload UI displays a bunch of text messages to the user that may be improved
 
 Here is a list of the options and their default values. Note that the `{file}` part will be replaced with the respective file name:
 
-* `browse_button_text`: The caption of the file selection dialog button. Default is "[Browse]"
-* `upload_button_text`: The caption of the upload start button. Default is "[Upload]"
+* `browse_button_text`: The caption of the file selection dialog button. Default is "\[Browse\]"
+* `upload_button_text`: The caption of the upload start button. Default is "\[Upload\]"
 * `file_size_error_text`: Shown when a user tries to upload a file bigger than the allowed size. Default is "File '{file}' exceeds maximum allowed size."
 * `allowed_extensions_error_text`: Shown when a user tries to upload a file of a disallowed type. Default is "File '{file}' not allowed."
 * `multiple_not_allowed_error_text`: Shown when the user selects multiple files in the file selection dialog. Default is "Multiple files not allowed. Dropping '{file}'."

@@ -10,8 +10,8 @@ permalink: filer-getting-started.html
 * [Defining an uploader](#defining_an_uploader)
 * [Associating uploaders with your models](#associating_uploaders_with_your_models)
 * [Public and private files](#public_and_private_files)
-* [Feeding data to your uploaders](#feeding_data_to_your_uploaders)
 * [Uploading directly to Progstr Filer](#uploading_directly_to_progstr_filer)
+* [Accepting uploads yourself](#accepting_uploads_yourself)
 * [Generating URLs for files](#generating_urls_for_files)
 * [Validation] (#validation)
 * [Source code](#source_code)
@@ -81,23 +81,27 @@ You can control private file URL expiration through the `Progstr::Filer.session_
 
     Progstr::Filer.session_timeout = 60 * 60 # 1 hour
 
-### Feeding data to your uploaders
+### Uploading directly to Progstr Filer
 
-That is easy - all you need is assign a Ruby File object to the uploader property and save the model object:
+Handling uploads yourself, validating and processing them before sending them to Progstr Filer is a fine approach, but often it is too much. In cases where you do not need to process files before storing them, you can just use the direct upload UI and have users upload files directly to the Progstr Filer servers. You can still restrict uploads with validation rules that can reject files by size or file type.
+
+For details on how to do that, see our [Direct file uploads article](/rails-direct-upload.html).
+
+### Accepting uploads yourself
+
+In cases where you need to perform additional work on uploaded files before storing them, you could accept uploads in your app and then use the ActiveRecord integration API to save the file to the server. To save a file you need is assign a Ruby File object to the uploader property and save the model object:
 
     @user.avatar = uploaded_image_file
     @user.avatar.save 
 {.prettyprint .lang-ruby .language-ruby}
 
-
-Or, Rails can get most of the job done for you automatically. If you create a file upload form:
+Or, in case of file uploads, Rails can get most of the job done for you automatically. If you create a file upload form:
 
     <div class="field">
       <%= f.label :avatar %>
       <%= f.file_field :avatar %>
     </div>
 {.prettyprint .lang-html .language-html}
-
 
 ... and then create your model from the params hash:
 
@@ -106,13 +110,6 @@ Or, Rails can get most of the job done for you automatically. If you create a fi
 {.prettyprint .lang-ruby .language-ruby}
 
 That will automatically extract the attachment file object from the params hash and set it as the avatar.
-
-### Uploading directly to Progstr Filer
-
-Handling uploads yourself, validating and processing them before sending them to Progstr Filer is a fine approach, but often it is too much. In cases where you do not need to process files before storing them, you can just use the direct upload UI and have users upload files directly to the Progstr Filer servers. You can still restrict uploads with validation rules that can reject files by size or file type.
-
-For details on how to do that, see our [Direct file uploads article](/rails-direct-upload.html).
-
 
 ### Generating URLs for files
 

@@ -11,6 +11,7 @@ permalink: filer-getting-started.html
 * [Associating uploaders with your models](#associating_uploaders_with_your_models)
 * [Public and private files](#public_and_private_files)
 * [Feeding data to your uploaders](#feeding_data_to_your_uploaders)
+* [Uploading directly to Progstr Filer](#uploading_directly_to_progstr_filer)
 * [Generating URLs for files](#generating_urls_for_files)
 * [Validation] (#validation)
 * [Source code](#source_code)
@@ -105,6 +106,12 @@ Or, Rails can get most of the job done for you automatically. If you create a fi
 {.prettyprint .lang-ruby .language-ruby}
 
 That will automatically extract the attachment file object from the params hash and set it as the avatar.
+
+### Uploading directly to Progstr Filer
+
+Handling uploads yourself, validating and processing them before sending them to Progstr Filer is a fine approach, but often it is too much. In cases where you do not need to process files before storing them, you can just use the direct upload UI and have users upload files directly to the Progstr Filer servers. You can still restrict uploads with validation rules that can reject files by size or file type.
+
+For details on how to do that, see our [Direct file uploads article](/rails-direct-upload.html).
 
 
 ### Generating URLs for files

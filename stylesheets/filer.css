@@ -3,6 +3,11 @@ body {
     1text-shadow: 1px 1px 2px #000;
 }
 
+.box {
+    background-color:#eee !important;
+    color:#333 !important;
+}
+
 body p {
     margin-bottom: 1em;
     text-align: justify;
@@ -16,12 +21,13 @@ pre,code {
 }
 
 a {
-    color: #444;
-    text-decoration:none;
+    color: #444 !important;
+    text-decoration:underline !important;
 }
 
 a:hover {
-    text-decoration:underline;
+    text-decoration:none !important;
+    color:#666 !important;
 }
 
 h3 {
@@ -31,7 +37,7 @@ h3 {
 }
 
 h1, h2 {
-    color: #333;
+    color: #333 !important;
     margin-bottom: 0.5em;
     font-weight: normal;
 }

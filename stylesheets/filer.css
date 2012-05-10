@@ -3,9 +3,10 @@ body {
     1text-shadow: 1px 1px 2px #000;
 }
 
-.box {
+#box {
     background-color:#eee !important;
     color:#333 !important;
+    text-shadow:none !important;
 }
 
 body p {
@@ -20,12 +21,12 @@ pre,code {
     font: 'Bitstream Vera Sans Mono','Courier',monospace;
 }
 
-a {
+#box a {
     color: #444 !important;
     text-decoration:underline !important;
 }
 
-a:hover {
+#box a:hover {
     text-decoration:none !important;
     color:#666 !important;
 }

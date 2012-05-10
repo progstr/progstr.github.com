@@ -38,9 +38,10 @@ h3 {
 }
 
 h1, h2 {
-    color: #666 !important;
+    color: #222 !important;
     margin-bottom: 0.5em;
     font-weight: normal;
+    text-shadow:none !important;
 }
 
 #wsite-content * {
